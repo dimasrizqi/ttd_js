@@ -19,10 +19,9 @@
 
 <form method="post" action="process.php" enctype="multipart/form-data">
 	<div id="signature-pad">
-		<div style="border:solid 1px teal; width:360px;height:110px;padding:3px;position:relative;">
-			<div id="note" onmouseover="my_function();">The signature should be inside box</div>
-			<canvas id="the_canvas" width="350px" height="100px"></canvas>
-		</div>
+		
+		<canvas id="the_canvas" width="1096px" height="600px" style="background-image: url('images/full_body.png'); width:'1092px';height='600px';"></canvas>
+		<div id="note" onmouseover="my_function();"></div>
 		<div style="margin:10px;">
 			<input type="hidden" id="signature" name="signature">
 			<button type="button" id="clear_btn" class="btn btn-danger" data-action="clear"><span class="glyphicon glyphicon-remove"></span> Clear</button>
@@ -38,7 +37,9 @@ var savePNGButton = wrapper.querySelector("[data-action=save-png]");
 var canvas = wrapper.querySelector("canvas");
 var el_note = document.getElementById("note");
 var signaturePad;
-signaturePad = new SignaturePad(canvas);
+signaturePad = new SignaturePad(canvas, {
+    backgroundImage: 'signature_074249.png'
+});
 
 clearButton.addEventListener("click", function (event) {
 	document.getElementById("note").innerHTML="The signature should be inside box";
