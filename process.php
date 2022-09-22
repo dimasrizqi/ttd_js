@@ -10,7 +10,7 @@
 <?php
 	$sig_string=$_POST['signature'];
 	// date("his") -> bisa digandi dengan ID rekam medik / id pasien
-	$nama_file="sign_result/".date("his").'full_body'.".png";
+	$nama_file="sign_result/".date("his").'_full_body'.".png";
 	file_put_contents($nama_file, file_get_contents($sig_string));
 	if(file_exists($nama_file)){
 		echo "<p>File Signature berhasil disimpan - ".$nama_file."</p>";

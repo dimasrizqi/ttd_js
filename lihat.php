@@ -11,7 +11,7 @@
 </body>
 <!-- Berfungsi sebagai input gambar -->
 <img src="images/full_body.png" id="img1" width="1092px" height="600px" hidden="true">
-<img src="sign_result/full_body_pain_082352.png" id="img2" width="1092px" height="600px" hidden="true">
+<img src="sign_result/092839_full_body.png" id="img2" width="1092px" height="600px" hidden="true">
 
 <!-- Hasil output setelah digabung -->
 <h2><b>Hasil</b><br><br><canvas id="canvas"></canvas>
