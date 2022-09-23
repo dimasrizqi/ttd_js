@@ -17,7 +17,7 @@
 <body>
 <h1>Digital Signature</h1>
 
-<form method="post" action="process.php" enctype="multipart/form-data">
+<form method="post" action="telinga_proses.php" enctype="multipart/form-data">
 	<div id="signature-pad">
 		
 		<canvas id="the_canvas" width="1096px" height="600px" style="background-image: url('images/ear.png'); width:'1092px';height='600px';"></canvas>
