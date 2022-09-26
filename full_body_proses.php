@@ -7,7 +7,7 @@
 	<title>Full body Sign</title>
 </head>
 <body>
-<img src='images/ear.png' id='img1' width='1092px' height='600px' hidden='true'>
+<img src='images/full_body.png' id='img1' width='1092px' height='600px' hidden='true'>
 <?php
 	$sig_string=$_POST['signature'];
 	// date("his") -> bisa digandi dengan ID rekam medik / id pasien
